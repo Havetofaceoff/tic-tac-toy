@@ -1,0 +1,126 @@
+body {
+  font-family: "Fredoka", sans-serif;
+  background-color: #5a1e76;
+  background-image: url(./img/bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  min-height: 100vh;
+  background-size: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: #2b0040;
+  height: 690px;
+  width: 600px;
+  border-radius: 35px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.container__top {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #48d2fe;
+  height: 135px;
+  width: 135px;
+  border-radius: 5px;
+}
+.container__card:nth-child(2) {
+  background-color: #bcdbf9;
+}
+
+.container__card:nth-child(3) {
+  background-color: #e2be00;
+}
+
+.container__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.container__value {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 42px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.container__body {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.container__cell {
+  height: 135px;
+  width: 135px;
+  border-radius: 5px;
+  background-color: #43115b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 94px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.x {
+  color: #48d2fe;
+}
+.o {
+  color: #e2be00;
+}
+.container__modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 300px;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+.modal__active {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease 1s;
+}
+
+.modal__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #f4f6f5;
+}
+.modal__btn {
+  background-color: #f4f6f5;
+  padding: 25px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
